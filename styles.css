@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Ubuntu, 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    /* Use salmon color as background in a gradient */
+    background: linear-gradient(135deg, #fa8072, #f08080);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header form {
+    display: flex;
+    gap: 10px;
+}
+
+header form input[type="text"],
+header form input[type="password"] {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+header form button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa07a; /* lighter salmon */
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: 500;
+}
+
+header form button:hover {
+    background: #ff8c69;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.pane {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.left,
+.right {
+    width: 20%;
+}
+
+.center {
+    flex: 1;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #fa8072;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Buttons in side forms (e.g. Connect) */
+ul li button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background: #fa8072;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+ul li button:hover {
+    background: #e66e5f;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: vertical;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #fa8072;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #e66e5f;
+}
+
+/* Additional styling for <select> */
+select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+/* Additional styling for <input type="file"> */
+input[type="file"] {
+    padding: 8px;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+/* Post styling */
+div strong {
+    color: #fa8072;
+    font-size: 1rem;
+}
+
+div p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+div small {
+    color: #888;
+    font-size: 0.85rem;
+}
+
+div img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrollbar Styling */
+.pane::-webkit-scrollbar {
+    width: 8px;
+}
+
+.pane::-webkit-scrollbar-thumb {
+    background: #fa8072;
+    border-radius: 10px;
+}
+
+.pane::-webkit-scrollbar-thumb:hover {
+    background: #e66e5f;
+}
+a{
+	text-decoration:none;
+	color:salmon;
+}
